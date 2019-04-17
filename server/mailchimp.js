@@ -17,6 +17,7 @@ function memberSubscribe(email, ip) {
 				status: 'subscribed'
 			})
 			.then(results => {
+				console.log('mailchimp response', results)
 				resolve(results)
 			})
 			.catch(err => {

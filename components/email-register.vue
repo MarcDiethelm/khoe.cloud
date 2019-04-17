@@ -47,8 +47,7 @@ export default {
 				.then(res => {
 					this.resultMsg = "Great! You'll hear from us soon."
 				})
-				.catch(err => {
-					console.log(err)
+				.catch(() => {
 					this.resultMsg = 'Sorry. There was an error while saving your email.'
 				})
 		}
