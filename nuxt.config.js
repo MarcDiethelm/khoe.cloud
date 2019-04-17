@@ -25,12 +25,16 @@ module.exports = {
 	/*
 	 ** Global CSS
 	 */
-	css: [],
+	css: [
+		'@/assets/dashboard/sass/black-dashboard.scss',
+		'@/assets/dashboard/css/nucleo-icons.css',
+		'@/assets/css/main.scss'
+	],
 
 	/*
 	 ** Plugins to load before mounting the App
 	 */
-	plugins: [],
+	plugins: ['~/plugins/blackDashboard.js'],
 
 	/*
 	 ** Nuxt.js modules
@@ -65,5 +69,6 @@ module.exports = {
 				})
 			}
 		}
-	}
+	},
+	serverMiddleware: ['~/api/index.js']
 }
