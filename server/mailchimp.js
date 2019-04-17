@@ -20,7 +20,8 @@ function memberSubscribe(email, ip) {
 				resolve(results)
 			})
 			.catch(err => {
-				console.log(err)
+				console.log(err) // // TODO: logging
+				if (err.title === 'Member Exists') return resolve()
 				reject(err)
 			})
 	})
