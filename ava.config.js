@@ -1,3 +1,3 @@
 export default {
-  require: ['./test/helpers/setup.js']
+	require: ['./test/helpers/setup.js']
 }
