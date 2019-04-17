@@ -1,67 +1,53 @@
 <template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        khoe.cloud
-      </h1>
-      <h2 class="subtitle">
-        Khoe Cloud website
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green"
-          >Documentation</a
-        >
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-          >GitHub</a
-        >
-      </div>
-    </div>
-  </section>
+	<div>
+		<div class="mission text-muted">
+			<p>Make digital privacy trivial</p>
+			<p>Your data always accessible to you</p>
+			<p>Make self-hosting simple and secure</p>
+			<p>Affordable, capable hardware</p>
+			<p>Focus on simplicity and aesthetics</p>
+		</div>
+		<h4 class="tagline">It's your data. Take it back.</h4>
+		<div class="container">
+			<logo />
+		</div>
+		<div class="container">
+			<email-register />
+		</div>
+	</div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import EmailRegister from '~/components/email-register.vue'
 
 export default {
-  components: {
-    Logo
-  }
+	components: {
+		Logo,
+		EmailRegister
+	}
 }
 </script>
 
-<style>
+<style lang="scss">
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+	display: flex;
+	flex-flow: row;
+	max-width: 600px;
 }
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.mission {
+	width: 100%;
+	text-align: center;
+	margin-top: 4rem;
+	margin-bottom: 20px;
+	p {
+		color: inherit;
+	}
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.tagline {
+	text-align: center;
 }
-
-.links {
-  padding-top: 15px;
+.footer {
+	padding-left: 24px;
 }
 </style>
