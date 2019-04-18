@@ -6,7 +6,7 @@
 		<form @submit.prevent="onSubmit(email, email2)">
 			<base-input v-model="email" type="email" placeholder="Enter email"></base-input>
 			<base-button native-type="submit" type="primary" simple>Send</base-button>
-			<p class="status-subscribed card-text">{{ resultMsg }}</p>
+			<p class="resultMsg card-text">{{ resultMsg }}</p>
 			<!-- anti-spam -->
 			<div style="position: absolute; left: -5000px;" aria-hidden="true">
 				<input type="text" name="email2" tabindex="-1" value="spam" />
@@ -47,8 +47,8 @@ export default {
 				.then(res => {
 					this.resultMsg = "Great! You'll hear from us soon."
 				})
-				.catch(() => {
-					this.resultMsg = 'Sorry. There was an error while saving your email.'
+				.catch(err => {
+					this.resultMsg = 'Sorry. There was an error while saving your email. ' + err.response.data.detail
 				})
 		}
 	}
@@ -59,8 +59,12 @@ export default {
 .label {
 	margin-bottom: 1rem;
 }
-.status-subscribed {
+.btn {
+	vertical-align: top;
+}
+.resultMsg {
 	display: inline-block;
 	padding-left: 2rem;
+	max-width: 72%;
 }
 </style>

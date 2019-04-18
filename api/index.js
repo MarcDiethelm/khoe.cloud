@@ -17,11 +17,11 @@ app
 
 	mailchimp
 		.memberSubscribe(req.body.email, req.ip)
-		.catch(err => {
-			res.status(500).send(err.detail)
-		})
 		.then(results => {
-			res.end('success')
+			res.json({success: true})
+		})
+		.catch(err => {
+			res.status(500).json({success: false, detail: err.detail})
 		})
 })
 
