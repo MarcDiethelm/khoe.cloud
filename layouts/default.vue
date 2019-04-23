@@ -22,7 +22,10 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a href="https://twitter.com/KhoeCloud" rel="noopener" class="nav-link">@KhoeCloud</a>
+						<a href="https://twitter.com/KhoeCloud" rel="noopener" class="nav-link">Twitter</a>
+					</li>
+					<li class="nav-item">
+						<a href="mailto:mail@khoe.cloud" rel="noopener" class="nav-link">Email</a>
 					</li>
 				</ul>
 				<div class="copyright">
