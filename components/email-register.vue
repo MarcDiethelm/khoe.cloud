@@ -36,6 +36,7 @@ export default {
 	methods: {
 		onSubmit(email) {
 			this.resultMsg = ''
+			if (!email.trim()) return
 			this.post()
 		},
 		post: function() {
