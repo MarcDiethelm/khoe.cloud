@@ -9,19 +9,18 @@ app.use(bodyParser.json()) // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
 app
-	.get('/', (req, res, next) => {
+.get('/', (req, res, next) => {
 	res.send('API root')
-})
-	.post('/news/signup', (req, res, next) => {
+}).post('/news/signup', (req, res, next) => {
 	if (req.body.isSpam) return res.end()
 
 	mailchimp
 		.memberSubscribe(req.body.email, req.ip)
 		.then(results => {
-			res.json({success: true})
+			res.json({ success: true })
 		})
 		.catch(err => {
-			res.status(500).json({success: false, detail: err.detail})
+			res.status(500).json({ success: false, detail: err.detail })
 		})
 })
 

@@ -1,4 +1,3 @@
-
 const assert = require('assert')
 assert.ok(process.env.KHOE_MAILCHIMP_API_KEY)
 assert.ok(process.env.KHOE_MAILCHIMP_LIST_ID)
