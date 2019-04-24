@@ -1,8 +1,8 @@
 # khoe.cloud
 
-> Khoe Cloud website
+> Khoe Cloud website hosted with [Dokku](http://dokku.viewdocs.io/dokku/) at https://khoe.cloud.
 
-## Build Setup
+## Development Setup
 
 ``` bash
 # install dependencies
@@ -11,11 +11,16 @@ $ npm install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm start
+# restart server
+$ rs
+```
 
-# generate static project
+## Deployment
+```bash
+# deploy to Dokku host (SSH keys required)
+$ npm run deploy
+
+# automatically generates static project via
 $ npm run generate
 ```
 
