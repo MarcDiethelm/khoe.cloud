@@ -33,6 +33,7 @@
 	font-family: Poppins;
 	font-weight: 200;
 	text-transform: uppercase;
+	padding-top: 0;
 	margin-bottom: 8px;
 }
 </style>
