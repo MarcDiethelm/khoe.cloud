@@ -27,6 +27,9 @@
 					<li class="nav-item">
 						<a href="mailto:mail@khoe.cloud" rel="noopener" class="nav-link">Email</a>
 					</li>
+					<li class="nav-item">
+						<a href="/attributions" class="nav-link">Attributions</a>
+					</li>
 				</ul>
 				<div class="copyright">
 					© 2019, made with <i class="tim-icons icon-heart-2"></i> by

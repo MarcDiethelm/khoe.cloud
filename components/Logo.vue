@@ -35,7 +35,4 @@
 	text-transform: uppercase;
 	margin-bottom: 8px;
 }
-.footer {
-	padding-left: 24px;
-}
 </style>
