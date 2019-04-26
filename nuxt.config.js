@@ -14,7 +14,6 @@ module.exports = {
 			{ hid: 'description', name: 'description', content: pkg.description }
 		],
 		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
-
 	},
 
 	/*
@@ -27,6 +26,7 @@ module.exports = {
 	 */
 	css: [
 		'@/assets/dashboard/sass/black-dashboard.scss',
+		'@/assets/dashboard/css/googlefonts.css',
 		'@/assets/dashboard/css/nucleo-icons.css',
 		'@/assets/css/main.scss'
 	],

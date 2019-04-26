@@ -30,7 +30,7 @@
 	text-align: center;
 }
 .logo-title {
-	font-family: Poppins;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	font-weight: 200;
 	text-transform: uppercase;
 	padding-top: 0;
