@@ -47,9 +47,18 @@ export default {
 				})
 				.then(res => {
 					this.resultMsg = "Great! You'll hear from us soon."
+					this.$parent.track('add_event', {
+						key: 'email-signup-success',
+						segmentation: { email: this.email }
+					})
 				})
 				.catch(err => {
 					this.resultMsg = 'Sorry. There was an error while saving your email. ' + err.response.data.detail
+					// bug: with `log_error` data is not transmitted, error is not shown on Countly server
+					this.$parent.track('add_event', {
+						key: 'email-signup-error',
+						segmentation: { email: this.email, detail: err.response.data.detail }
+					})
 				})
 		}
 	}
