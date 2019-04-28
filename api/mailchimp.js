@@ -20,7 +20,7 @@ function memberSubscribe(email, ip) {
 				resolve(results)
 			})
 			.catch(err => {
-				console.log(err) // // TODO: logging
+				console.log(`mailchimp: ${err.title}: ${err.detail}`) // // TODO: logging
 				if (err.title === 'Member Exists') return resolve()
 				reject(err)
 			})
