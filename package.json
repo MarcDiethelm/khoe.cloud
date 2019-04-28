@@ -15,7 +15,7 @@
     "deploy": "git push dokku develop:master"
   },
   "dependencies": {
-    "@marcdiethelm/nuxtjs-countly": "^0.3.2",
+    "@marcdiethelm/nuxtjs-countly": "^0.3.3",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^5.2.0",
