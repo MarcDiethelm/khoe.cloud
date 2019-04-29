@@ -24,17 +24,8 @@ import EmailRegister from '~/components/email-register.vue'
 export default {
 	components: {
 		Logo,
-		EmailRegister
-	},
-
-	methods: {
-		track: function(action, data) {
-			if (typeof action !== 'string') return console.error(`action is not string, type: ${typeof action}`)
-			if (action === 'add_event' && typeof data.key !== 'string')
-				return console.error(`data.key is not string, type: ${typeof action}`)
-
-			this.$countly.q.push([action, data])
-		}
+		EmailRegister,
+		KoFi
 	}
 }
 </script>
