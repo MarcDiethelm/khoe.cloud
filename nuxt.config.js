@@ -4,17 +4,27 @@ require('dotenv').config()
 module.exports = {
 	mode: 'universal',
 
+	manifest: {
+		name: pkg.config.sitename,
+		author:  null,
+		description: 'Essential data privacy and security for eveyone by making self-hosting basic services trival and secure.',
+		lang: 'en-US',
+		background_color: '#1e1e2f',
+		ogHost: pkg.config.host,
+		ogImage: '/img/protea.png',
+		twitterSite: '@KhoeCloud'
+	},
+
 	/*
 	 ** Headers of the page
 	 */
 	head: {
-		title: 'Khoe Cloud',
+		title: pkg.config.sitename,
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
 			{ hid: 'description', name: 'description', content: pkg.description }
-		],
-		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+		]
 	},
 
 	/*
