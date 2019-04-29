@@ -24,8 +24,7 @@ import EmailRegister from '~/components/email-register.vue'
 export default {
 	components: {
 		Logo,
-		EmailRegister,
-		KoFi
+		EmailRegister
 	}
 }
 </script>
