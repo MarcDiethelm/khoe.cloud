@@ -6,8 +6,9 @@ module.exports = {
 
 	manifest: {
 		name: pkg.config.sitename,
-		author:  null,
-		description: 'Essential data privacy and security for eveyone by making self-hosting basic services trival and secure.',
+		author: null,
+		description:
+			'Essential data privacy and security for everyone by making self-hosting basic services trival and secure.',
 		lang: 'en-US',
 		background_color: '#1e1e2f',
 		ogHost: pkg.config.host,
@@ -76,6 +77,7 @@ module.exports = {
 			'track_pageview',
 			'track_links'
 		],
+		interval: 2000,
 		debug: process.env.NODE_ENV !== 'production'
 	},
 
