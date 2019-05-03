@@ -72,11 +72,7 @@ module.exports = {
 		url: process.env.KHOE_COUNTLY_URL,
 		app_key: process.env.KHOE_COUNTLY_APP_KEY,
 		trackerSrc: process.env.KHOE_COUNTLY_TRACKER_SRC,
-		trackers: [
-			'track_sessions',
-			'track_pageview',
-			'track_links'
-		],
+		trackers: ['track_sessions', 'track_pageview', 'track_links'],
 		interval: 2000,
 		debug: process.env.NODE_ENV !== 'production'
 	},
