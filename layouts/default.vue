@@ -25,10 +25,13 @@
 						<a href="https://twitter.com/KhoeCloud" rel="noopener" class="nav-link">Twitter</a>
 					</li>
 					<li class="nav-item">
-						<a href="mailto:mail@khoe.cloud" rel="noopener" class="nav-link">Email</a>
+						<a href="mailto:mail@khoe.cloud" class="nav-link">Email</a>
 					</li>
 					<li class="nav-item">
 						<a href="/attributions" class="nav-link">Attributions</a>
+					</li>
+					<li class="nav-item">
+						<a href="/privacy" class="nav-link">Privacy</a>
 					</li>
 				</ul>
 				<div class="copyright">

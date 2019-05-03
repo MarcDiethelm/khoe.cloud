@@ -2,6 +2,7 @@
 	<card class="email-register">
 		<p class="label card-text">
 			Sign up here for early access and further info.
+			<a href="/privacy" class="small link-privacy">privacy</a>
 		</p>
 		<form @submit.prevent="onSubmit(email, email2)">
 			<base-input v-model="email" type="email" placeholder="Enter email"></base-input>
@@ -68,6 +69,10 @@ export default {
 <style lang="scss">
 .label {
 	margin-bottom: 1rem;
+}
+.link-privacy {
+	display: inline-block;
+	margin-left: 1.5em;
 }
 .btn {
 	vertical-align: top;

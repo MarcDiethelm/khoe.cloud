@@ -35,6 +35,14 @@
 				Apex Mk2
 			</a>
 		</p>
+
+		<h4>Analytics</h4>
+		<p>
+			Your very own, self hosted and open source desktop, web, mobile analytics server and SDKs<br />
+			<a href="https://count.ly/community-edition" target="_blank">
+				Countly Community Edition
+			</a>
+		</p>
 	</card>
 </template>
 <script>
