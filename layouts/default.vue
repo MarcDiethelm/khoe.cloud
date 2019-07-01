@@ -8,13 +8,13 @@
 			<div class="container-fluid">
 				<ul class="nav">
 					<li class="nav-item">
-						<a href="https://github.com/khoe-cloud/khoe-ansible" rel="noopener" class="nav-link">
+						<a href="https://github.com/khoe-cloud/" rel="noopener" class="nav-link">
 							Github
 						</a>
 					</li>
 					<li class="nav-item">
 						<a
-							href="https://github.com/khoe-cloud/khoe-ansible/wiki/Frequently-Asked-Questions"
+							href="https://github.com/khoe-cloud/khoe-nas/wiki/Frequently-Asked-Questions"
 							rel="noopener"
 							class="nav-link"
 						>
