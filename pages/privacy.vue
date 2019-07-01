@@ -8,21 +8,21 @@
 			services, and communications.
 		</p>
 		<p class="privacy-summary">
-			<strong>No analytics data is shared with any 3rd party.</strong>
+			<strong>No analytics data is shared with any 3rd party.</strong> No ad networks are tracking you here!
 		</p>
 		<p>
 			Since no analytics data is made available to any 3rd parties and since our website contains no ads,
 			<strong>we're asking you disable any adblockers</strong> on this website, so that we may get a more complete
 			picture of who is visiting our website and how, and using it in which way and to identify any problems a
-			visitor may encounter through our error tracking.
+			visitor may encounter through our error tracking. Thank you.
 		</p>
 		<h2>Email</h2>
 		<p>
 			We offer you to subscribe with your email address to communications and updates from Khoe Cloud. Email
-			addresses are (for now) managed and stored by the communication service, Mailchimp.
+			addresses are managed and stored (for now) by the communication service, Mailchimp.
 		</p>
 		<p class="privacy-summary">
-			<strong>Email addresses are (for now) stored by a third party.</strong>
+			<strong>Email addresses are stored by a third party (for now).</strong>
 		</p>
 		<h2>Payment processing</h2>
 		<p>
