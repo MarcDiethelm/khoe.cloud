@@ -14,26 +14,35 @@
 		<div class="container">
 			<email-register />
 		</div>
+		<div class="container ko-fi">
+			<ko-fi />
+		</div>
 	</div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
 import EmailRegister from '~/components/email-register.vue'
+import KoFi from '~/components/ko-fi.vue'
 
 export default {
 	components: {
 		Logo,
-		EmailRegister
+		EmailRegister,
+		KoFi
 	}
 }
 </script>
 
 <style lang="scss">
 .container {
-	display: flex;
-	flex-flow: row;
 	max-width: 600px;
+}
+.ko-fi {
+	display: flex;
+	flex-flow: column;
+	margin-top: 5rem;
+	margin-bottom: 3rem;
 }
 .mission {
 	width: 100%;
