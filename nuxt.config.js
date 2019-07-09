@@ -8,7 +8,7 @@ module.exports = {
 		name: pkg.config.sitename,
 		author: null,
 		description:
-			'Essential data privacy and security for everyone by making self-hosting basic services trival and secure.',
+			'Essential data privacy and security for everyone by making self-hosting basic services trivial and secure.',
 		lang: 'en-US',
 		background_color: '#1e1e2f',
 		ogHost: pkg.config.host,
